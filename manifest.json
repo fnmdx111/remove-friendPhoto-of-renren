@@ -5,11 +5,11 @@
 
     "description": "email: chsc4698@gmail.com",
     "icons": {
-        "128": "gopher.png"
+        "128": "img/gopher.png"
     },
 
     "page_action": {
-        "default_icon": "images.jpg",
+        "default_icon": "img/images.jpg",
         "default_title": "清除广告请等5秒"
     },
     "content_scripts": [
@@ -17,11 +17,11 @@
             "matches": [
                 "http://*.renren.com/*"
             ],
-            "js": ["jquery.min.js", "main.js"]
+            "js": ["js/jquery.min.js", "js/main.js"]
         }
     ],
     "background": {
-        "scripts": ["bkg.js"]
+        "scripts": ["js/bkg.js"]
     },
     "permissions": [
         "tabs"

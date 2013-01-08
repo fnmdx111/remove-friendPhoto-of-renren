@@ -5,12 +5,14 @@
 
 console.log('test loaded');
 
+var INTERVAL = 5000;
+
 window.setInterval(function () {
     $.each($('div[id^="ad"]'), function (idx, obj) {
         console.log(idx + ' ' + $(obj).attr('id'));
         $(obj).hide();
     });
-}, 5000);
+}, INTERVAL);
 
 $('div#friendPhoto').hide();
 

@@ -5,7 +5,7 @@
 
 
 chrome.tabs.executeScript(null,
-                          { file: "main.js" });
+                          { file: "js/main.js" });
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     if (tab.url.indexOf('renren') > -1) {

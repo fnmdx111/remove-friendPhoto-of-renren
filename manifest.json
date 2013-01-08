@@ -1,0 +1,30 @@
+{
+    "name": "屏蔽从网上奇怪的东西",
+    "version": "0.0.0",
+    "manifest_version": 2,
+
+    "description": "email: chsc4698@gmail.com",
+    "icons": {
+        "128": "gopher.png"
+    },
+
+    "page_action": {
+        "default_icon": "images.jpg",
+        "default_title": "清除广告请等5秒"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.renren.com/*"
+            ],
+            "js": ["jquery.min.js", "main.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["bkg.js"]
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
+
